@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EDDEA4;
+    font-family: "Wix Madefor Text", sans-serif;
+    color: #6b705c;;
+}
+/*/main/*/
+.main{
+    height: 100vh;
+    width: 100vw;
+    color: #F9F7F3;
+    background-image: url("./img/playa.jpg");
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.main h1{
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 50px;
+}
+/*/formulario/*/
+.formC{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.formC input{
+    border: none;
+    font-weight: 400;
+    color: none;
+    text-decoration: none;
+    background: #F9F7F3;
+}
+.formC button{
+    border-style: none;
+    
+}

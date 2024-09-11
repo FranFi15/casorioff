@@ -35,6 +35,7 @@ body{
     font-weight: 800;
     font-size: 50px;
     animation: aparecer 2.5s;
+    animation-delay: 1s;
 }
 /*/formulario/*/
 .formC{

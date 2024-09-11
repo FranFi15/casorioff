@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
 
-@keyframes aparecer {
+@keyframes titulo {
     0%{
         transform: translateY(-200px);
         opacity: 0;
@@ -10,6 +10,15 @@
         opacity: 1;
     }
 }
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 body{
     margin: 0;
     display: flex;
@@ -29,13 +38,19 @@ body{
     display: flex;
     align-items:center;
     flex-direction: column;
+    justify-content: space-around;
 }
 .main h1{
-    margin-top: 100px;
+    margin-bottom: 0;
     font-weight: 800;
     font-size: 50px;
-    animation: aparecer 2.5s;
+    animation: titulo 2.5s;
     animation-delay: 1s;
+}
+.main h3{
+    margin-top: 20px;
+    font-size: 30px;
+    animation: aparecer 4s;
 }
 /*/formulario/*/
 .formC{
@@ -43,16 +58,33 @@ body{
     display: flex;
     flex-direction: column;
     font-weight: 600;
+    padding: 60px;
+    align-items: start;
+    background-color: #F9F7F3;
 }
 
 .formC input{
-    border: none;
+    margin: 10px;
+    border-style: none;
     font-weight: 400;
-    color: none;
+    color: #6b705c;
     text-decoration: none;
     background: #F9F7F3;
+    font-size: 15px;
+}
+.formC label{
+    margin: 10px;
+    font-size: 20px;
 }
 .formC button{
     border-style: none;
     
+}
+.label{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+}
+.label label{
+    font-size: 15px;
 }

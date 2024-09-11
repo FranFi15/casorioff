@@ -18,9 +18,9 @@
         opacity: 1;
     }
 }
-
 body{
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,8 @@ body{
 .main{
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
     color: #F9F7F3;
     background-image: url("./img/playa.jpg");
     background-size: cover;
@@ -40,17 +42,36 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-.main h1{
+.titulo{
+    margin-bottom: 100px;
+}
+.titulo h1{
     margin-bottom: 0;
     font-weight: 800;
     font-size: 50px;
     animation: titulo 2.5s;
     animation-delay: 1s;
 }
-.main h3{
+.titulo h3{
     margin-top: 20px;
     font-size: 30px;
     animation: aparecer 4s;
+}
+
+/*/saludo/*/
+.saludo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    width: 98%;
+}
+.saludo h3 {
+    font-size: 30px;
+}
+.saludo p {
+    font-size: 15px;
 }
 /*/formulario/*/
 .formC{
@@ -58,22 +79,29 @@ body{
     display: flex;
     flex-direction: column;
     font-weight: 600;
-    padding: 60px;
+    padding:40px 0;
+    margin: 0;
     align-items: start;
     background-color: #F9F7F3;
+    border-radius: 50px;
+    width: 98vw;
 }
 
 .formC input{
     margin: 10px;
+    padding: 10px;
     border-style: none;
+    border-radius: 20px;
     font-weight: 400;
     color: #6b705c;
     text-decoration: none;
-    background: #F9F7F3;
+    background: #EDDEA4;
     font-size: 15px;
+    width: 80%;
 }
 .formC label{
-    margin: 10px;
+    margin:0 10px;
+    padding: 10px;
     font-size: 20px;
 }
 .formC button{
@@ -83,8 +111,27 @@ body{
 .label{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     font-size: 10px;
+    width: 80%;
 }
 .label label{
     font-size: 15px;
+
+}
+/*/ubicacion/*/
+.ubicacion{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.img{
+    background-image: url("img/shanty.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 300px;
 }

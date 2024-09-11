@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+@keyframes aparecer {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 body{
     margin: 0;
     display: flex;
@@ -23,6 +34,7 @@ body{
     margin-top: 100px;
     font-weight: 800;
     font-size: 50px;
+    animation: aparecer 2.5s;
 }
 /*/formulario/*/
 .formC{

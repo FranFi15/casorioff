@@ -9,6 +9,12 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message));
 });
 
+const btnE = document.querySelector("button#enviar");
+
+function Hide() {
+  btnE.style.opacity = "0";
+}
+
 const dateTarget = new Date("12/28/2024 8:00 PM");
 
 const days = document.querySelector("span#days");

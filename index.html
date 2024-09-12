@@ -9,26 +9,24 @@
 <body>
    <div class="main">
    <div class="titulo"> <h1>FLOR & FRAN</h1>
-    <h3>28 Dic 2024, 20hs, MH </h3></div>
+    <h3>28 Dic 2024, 20hs</h3></div>
     <div class="time">
         <div class="clock">
-            <span id="days" class="digit"></span>
-            <span>DÍAS</span>
+            <span id="days"></span>
+            <span class="digit">DÍAS</span>
         </div>        
         <div class="clock">
-            <span id="hours" class="digit"></span>
-            <span>HRS</span>
+            <span id="hours"></span>
+            <span class="digit">HRS</span>
         </div>        
         <div class="clock">
-            <span id="minutes" class="digit"></span>
-            <span>MIN</span>
+            <span id="minutes"></span>
+            <span class="digit">MIN</span>
         </div>        
         <div class="clock">
-            <span id="seconds" class="digit"></span>
-            <span>SEG</span>
-
+            <span id="seconds"></span>
+            <span class="digit">SEG</span>
         </div>
-
     </div>
     </div>
     <div class="saludo">
@@ -67,9 +65,7 @@
       <div class="gift">
         <img src="./img/regalo.png">
         <p>Tu presencia es nuestro mejor regalo, pero si queres hacernos un presente podés hacerlo a travez de este</p>
-        <button id="CBU">CBU</button>
-
-      </div>
+        <button  onclick="Click()" class="cbuContainer"><span id="CBU">CBU</span></button>
       <script src="main.js"></script>
 </body>
 </html>

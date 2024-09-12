@@ -43,8 +43,15 @@ updateCountdown();
 
 setInterval(updateCountdown, milisecondsOfASecond);
 
-const CBU = document.querySelector("CBU");
+const CBU = document.querySelector("span#CBU");
 
-CBU.addEventListener("click", (e) => {
-  CBU.textContent = "Alias: casamientofloryfran";
-});
+function Click() {
+  if (CBU.textContent === "CBU") {
+    return (CBU.textContent =
+      "Alias: casamientofloryfran  CBU:0000003100098307620205");
+  } else if (
+    CBU.textContent === "Alias: casamientofloryfran  CBU:0000003100098307620205"
+  ) {
+    return (CBU.textContent = "CBU");
+  }
+}

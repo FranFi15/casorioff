@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
 
-@keyframes titulo {
-    0%{
-        transform: translateY(-200px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 @keyframes aparecer {
     0%{
         opacity: 0;
@@ -29,6 +19,7 @@ body{
     background-attachment: fixed;
     background-image: url("./img/playa2.jpg");
     background-size: cover;
+    width: 100vw;
 }
 /*/main/*/
 .main{
@@ -40,7 +31,12 @@ body{
     align-items:center;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(0,0,0,0.2);
+    background-color: rgba(110, 108, 108, 0.4);
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo h1{
@@ -49,25 +45,31 @@ body{
     margin-bottom: 0;
     font-weight: 800;
     font-size: 50px;
-    animation: titulo 2.5s;
+    animation: aparecer 2.5s;
     animation-delay: 1s;
 }
 .titulo h3{
     font-size: 30px;
     animation: aparecer 4s;
+    animation-delay: 2s;
+    color: #E4BB68;
 }
 
 .time{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 95vw;
 }
 .clock{
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 30px;
     font-weight: 800;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.digit{
+    color:#E4BB68;
 }
 
 /*/saludo/*/
@@ -78,7 +80,7 @@ body{
     justify-content: space-evenly;
     width: 100vw;
     height: 30vh;
-    background-color: rgb(0,0,0,0.2);
+    background-color: rgba(110, 108, 108, 0.4);
     padding: 20px 0px;
 }
 .saludo h3 {
@@ -88,8 +90,9 @@ body{
 }
 .saludo p {
     font-size: 20px;
-    font-weight: 700;
-    width: 90vw;
+    font-weight: 500;
+    width: 80vw;
+    text-align: center;
 }
 /*/formulario/*/
 .formC{
@@ -163,7 +166,7 @@ body{
     width: 100%;
     background-color: rgba(249,247,243,0.8);
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
 }
 .ubicacion button{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
@@ -174,6 +177,7 @@ body{
     padding:20px 30px ;
     margin: 40px;
     background-color: #f0efeb;
+    cursor: pointer;
 }
 .ubicacion a{
     text-decoration: none;
@@ -209,12 +213,12 @@ img{
 
 /*/dresscode/*/
 .dresscode{
-    padding: 40px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(0,0,0,0.3);
+    background-color: rgba(110, 108, 108, 0.4);
     width: 100vw;
 }
 .dresscode h3{
@@ -229,14 +233,17 @@ img{
     padding: 10px;
     font-weight: 700;
     font-size: 25px;
+    color: #E4BB68;
 }
 .gift{
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin: 40px;
+    margin-bottom: 100px;
+    background-color: rgba(110, 108, 108, 0.4);
 }
 .gift p{
     margin: 0;
@@ -244,13 +251,28 @@ img{
     font-weight: 700;
     font-size: 25px;
 }
-.gift button{
+.cbuContainer{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #f0efeb;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
     border: none;
     border-radius: 10px;
-    padding:20px 30px ;
+    padding:20px 50px ;
     margin: 40px;
-    background-color: #f0efeb;
+    color: #6b705c;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+#CBU{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+   
 }

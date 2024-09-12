@@ -61,7 +61,7 @@ body{
     font-size: 30px;
     animation: aparecer 4s forwards;
     animation-delay: 2s;
-    color: #E4BB68;
+    color: #D0B899;
     opacity: 0;
 }
 
@@ -82,7 +82,7 @@ body{
     animation-delay: 3s
 }
 .digit{
-    color:#E4BB68;
+    color:#D0B899;
     opacity: 0;
     animation: aparecer 4s forwards;
     animation-delay: 3.5s;
@@ -103,7 +103,7 @@ body{
     font-size: 30px;
     font-weight: 800;
     margin: 0;
-    color:#E4BB68
+    color:#D0B899
 }
 .saludo p {
     font-size: 20px;
@@ -204,12 +204,12 @@ body{
 .ubicacion h3{
     font-weight: 800;
     font-size: 30px;
-    color: #6b705c;
+    color: black;
     padding-top: 0;
     margin: 10px;
 }
 .ubicacion p{
-    color:#6b705c;
+    color:black;
     font-weight: 700;
 }
 img{
@@ -251,7 +251,7 @@ img{
     padding: 10px;
     font-weight: 700;
     font-size: 25px;
-    color: #E4BB68;
+    color: #D0B899;
 }
 .gift{
     height: 40vh;

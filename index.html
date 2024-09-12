@@ -10,37 +10,65 @@
    <div class="main">
    <div class="titulo"> <h1>FLOR & FRAN</h1>
     <h3>28 Dic 2024, 20hs, MH </h3></div>
+    <div class="time">
+        <div class="clock">
+            <span id="days" class="digit"></span>
+            <span>DÍAS</span>
+        </div>        
+        <div class="clock">
+            <span id="hours" class="digit"></span>
+            <span>HRS</span>
+        </div>        
+        <div class="clock">
+            <span id="minutes" class="digit"></span>
+            <span>MIN</span>
+        </div>        
+        <div class="clock">
+            <span id="seconds" class="digit"></span>
+            <span>SEG</span>
+
+        </div>
+
+    </div>
     </div>
     <div class="saludo">
         <h3>NOS CASAMOS :)</h3>
-        <P>Acompáñanos en este día tan especial,  
-            donde daremos un paso más en nuestro viaje juntos,  
-            rodeados de la familia y amigos que han sido parte de nuestra historia.</P>
+        <P>Acompáñanos en este día tan especial, donde daremos un paso más en nuestro viaje juntos, rodeados de la familia y amigos que han sido parte de nuestra historia.</P>
     </div>
-    <div>
+      <div class="ubicacion">
+        <img src="./img/pin-de-ubicacion.png">
+        <h3>SHANTI</h3>
+        <P>Río Asunción y Costanera ,Monte Hermoso</P>
+        <div class="img"></div>
+        <button><a href="https://maps.app.goo.gl/7XT47EJ74W1bPQ947?g_st=iw">UBICACIÓN</a></button>
+      </div>
+      <div class="dresscode"><img src="./img/traje-de-negocios.png" >
+        <h3>DRESS CODE</h3>
+        <P>Elegante-Sport</P>
+    </div>
+      <div>
         <form name = "formCasorio" class="formC" onsubmit="Sumbit()">
           <label>Nombre Completo</label>
-          <input name="Name" type="text" />
-          <label>¿Venis?</label>
+          <input name="Name" type="text" placeholder="Cosme Funalito"/>
+          <label>Confirmación de Asistencia</label>
           <div class="label">
-            <label>Si voy </label>
+            <label>Si voy <3</label>
             <input name="Confirm" type="radio" value="si" />
           </div>
           <div class="label">
-            <label>No puedo</label>
+            <label>No puedo :(</label>
             <input name="Confirm" type="radio" value="no" />
         </div>
-          <label>¿Alguna Alergia?</label>
-          <input name="Allergy" type="text" />
-          <label>¿Cancion que no puede fatar?</label>
-          <input name="Song" type="text" />
-          <button type="submit">Enviar</button>
+          <label>¿Canción que no puede fatar?</label>
+          <input name="Song" type="text" placeholder="Nombre y Artista"/>
+          <button type="submit">ENVIAR</button>
         </form>
       </div>
-      <div class="ubicacion">
-        
-        <button><a href="https://maps.app.goo.gl/7XT47EJ74W1bPQ947?g_st=iw"><h3>Ubicación</h3></a></button>
-        <div class="img"></div>
+      <div class="gift">
+        <img src="./img/regalo.png">
+        <p>Tu presencia es nuestro mejor regalo, pero si queres hacernos un presente podés hacerlo a travez de este</p>
+        <button id="CBU">CBU</button>
+
       </div>
       <script src="main.js"></script>
 </body>

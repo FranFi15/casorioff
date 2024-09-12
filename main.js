@@ -8,3 +8,43 @@ form.addEventListener("submit", (e) => {
     .then((response) => console.log("Success!", response))
     .catch((error) => console.error("Error!", error.message));
 });
+
+const dateTarget = new Date("12/28/2024 8:00 PM");
+
+const days = document.querySelector("span#days");
+const hours = document.querySelector("span#hours");
+const minutes = document.querySelector("span#minutes");
+const seconds = document.querySelector("span#seconds");
+
+const milisecondsOfASecond = 1000;
+const milisecondsOfAMinute = milisecondsOfASecond * 60;
+const milisecondsOfAHour = milisecondsOfAMinute * 60;
+const milisecondsOfADay = milisecondsOfAHour * 24;
+
+function updateCountdown() {
+  const now = new Date();
+  const duration = dateTarget - now;
+  const remainingDays = Math.floor(duration / milisecondsOfADay);
+  const remainingHours = Math.floor(
+    (duration % milisecondsOfADay) / milisecondsOfAHour
+  );
+  const remainingMinutes = Math.floor(
+    (duration % milisecondsOfAHour) / milisecondsOfAMinute
+  );
+  const remainingSeconds = Math.floor(
+    (duration % milisecondsOfAMinute) / milisecondsOfASecond
+  );
+  days.textContent = remainingDays;
+  hours.textContent = remainingHours;
+  minutes.textContent = remainingMinutes;
+  seconds.textContent = remainingSeconds;
+}
+updateCountdown();
+
+setInterval(updateCountdown, milisecondsOfASecond);
+
+const CBU = document.querySelector("CBU");
+
+CBU.addEventListener("click", (e) => {
+  CBU.textContent = "Alias: casamientofloryfran";
+});

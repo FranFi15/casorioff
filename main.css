@@ -193,7 +193,7 @@ video {
     width: 100%;
     background-color: rgba(249,247,243,0.8);
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
 }
 .ubicacion button{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
@@ -317,4 +317,8 @@ footer{
     border-style: none;
     animation: aparecer 2s;
     
+}
+.fonde{
+    display: flex;
+    flex-direction: column;
 }

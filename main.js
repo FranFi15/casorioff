@@ -62,15 +62,14 @@ function Click() {
   }
 }
 
-function pauseMusic() {
-  var audioPlayer = document.getElementById("audio-player");
-  var audioContainer = $("#music-container");
-  audioPlayer.pause();
-  audioContainer.addClass("music-player--disabled");
-}
-function playMusic() {
-  var audioPlayer = document.getElementById("audio-player");
-  var audioContainer = $("#music-container");
-  audioPlayer.play();
-  audioContainer.removeClass("music-player--disabled");
+const audio = document.getElementById("audio");
+const btn = document.getElementById("btn");
+function Play() {
+  if (audio.paused) {
+    audio.play();
+    btn.style.background = "url(img/pausa.png)";
+  } else if (audio.play) {
+    audio.pause();
+    btn.style.background = "url(img/boton-de-play.png)";
+  }
 }

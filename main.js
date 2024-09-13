@@ -61,5 +61,3 @@ function Click() {
     return (CBU.textContent = "CBU");
   }
 }
-
-const audio = document.querySelector("audio#audio");

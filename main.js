@@ -61,3 +61,16 @@ function Click() {
     return (CBU.textContent = "CBU");
   }
 }
+
+function pauseMusic() {
+  var audioPlayer = document.getElementById("audio-player");
+  var audioContainer = $("#music-container");
+  audioPlayer.pause();
+  audioContainer.addClass("music-player--disabled");
+}
+function playMusic() {
+  var audioPlayer = document.getElementById("audio-player");
+  var audioContainer = $("#music-container");
+  audioPlayer.play();
+  audioContainer.removeClass("music-player--disabled");
+}

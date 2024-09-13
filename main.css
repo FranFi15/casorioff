@@ -314,5 +314,6 @@ footer{
     background: url("./img/boton-de-play.png");
     background-repeat: no-repeat;
     border-style: none;
+    animation: aparecer 2s;
     
 }

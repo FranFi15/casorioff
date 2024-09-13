@@ -62,13 +62,13 @@ video {
     padding-top: 50px;
     margin-bottom: 0;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 50px;
     animation: aparecer 2s forwards;
     animation-delay: 0.5s;
     opacity: 0;
 }
 .titulo h3{
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 800;
     animation: aparecer 2s forwards;
     animation-delay: 1s;
